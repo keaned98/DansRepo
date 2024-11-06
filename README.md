@@ -1,5 +1,5 @@
-# DanKeane
-A collection of some of my recent projects:
+# Welcome!
+Here is a collection of some of my recent projects:
 
 I am a recent graduate of Long Island University where I majored in Data Analytics and Business Management.
 I was actively involved on campus, playing collegiate baseball, a member of the Data Analytics Society, and a Dean scholar.
