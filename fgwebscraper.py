@@ -18,7 +18,7 @@ import sys
 current_date = datetime.now().strftime('%m%d')
 ##### LOAD WEBDRIVER TO BEGIN BUILDING WEBSCRAPER FOR FANGRAPHS #####
 chrome_options = Options()
-download_dir = r"C:\Users\keane\OneDrive\Documents\Excel"
+download_dir = r"C:\path\to\directory"
 
 prefs = {"download.default_directory": download_dir,
          "download.prompt_for_download": False,
@@ -28,7 +28,7 @@ prefs = {"download.default_directory": download_dir,
 chrome_options.add_experimental_option("prefs", prefs)
 
 # setup chrome webdriver
-driver_path = r"C:\Users\keane\OneDrive\Documents\ChromeDriver\chromedriver-win64\chromedriver.exe"
+driver_path = r"C:\path\to\directory\with\driver"
 driver = webdriver.Chrome(executable_path=driver_path, options = chrome_options)
 
 # open fangraphs sign in page
@@ -38,8 +38,8 @@ driver.get('https://blogs.fangraphs.com/wp-login.php?redirect_to=https://www.fan
 username_field = driver.find_element('id', 'user_login')
 password_field = driver.find_element('id', 'user_pass')
 
-username_field.send_keys('dkeane')
-password_field.send_keys('BillCharlie247w@')
+username_field.send_keys('username')
+password_field.send_keys('password')
 
 password_field.send_keys(Keys.RETURN)
 # wait for login to complete
